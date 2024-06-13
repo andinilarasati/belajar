@@ -1,0 +1,21 @@
+PengolahKata berfungsi sebagai editor teks yang memiliki kemampuan untuk menambahkan teks (ketik)
+membatalkan perubahan terakhir (undo)
+mengulang perubahan yang dibatalkan (redo)
+dan memeriksa apakah stack undo atau redo kosong (isEmptyUndo dan isEmptyRedo).
+
+tumpukanUndo: stack untuk menyimpan teks saat ini sebelum dilakukan perubahan, digunakan untuk operasi undo.
+tumpukanRedo: stack untuk menyimpan teks yang di-undo, digunakan untuk operasi redo.
+teksSaatIni: string untuk menyimpan teks yang sedang aktif.
+
+Fungsi main adalah antarmuka pengguna sederhana yang menggunakan kelas PengolahKata. 
+#include <iostream> : Header ini menyertakan deklarasi untuk input-output stream di C++.
+#include <stack>  : Header ini menyertakan deklarasi untuk container stack di C++. Stack adalah container adaptif yang menyediakan antarmuka LIFO (Last In, First Out)
+#include <string>  : Header ini menyertakan deklarasi untuk kelas std::string di C++.
+
+push() untuk menambahkan elemen ke stack.
+pop() untuk menghapus elemen dari stack.
+top() untuk mengakses elemen di puncak stack.
+empty() untuk memeriksa apakah stack kosong.
+size() untuk mendapatkan jumlah elemen dalam stack.
+
+std::cout << "\033[2J\033[1;1H"; : untuk membersihkan layar terminal dan memindahkan kursor ke posisi awal (baris pertama, kolom pertama).
